@@ -855,17 +855,17 @@ try:
     bgNames = sys.argv[findArg("--minus",sys.argv)+1:findArg("--denat",sys.argv)]
     dcNames = sys.argv[findArg("--denat",sys.argv)+1:]
     
-    #print "profileName: %s \n"%profileName
-    #print "targetName: %s \n"%targetName
-    #print "rxNames:"
-    #for name in rxNames:
-    #    print name+"\n"
-    #print "minusNames:"
-    #for name in bgNames:
-    #    print name+"\n"
-    #print "denatNames:"
-    #for name in dcNames:
-    #    print name+"\n"
+    print "profileName: %s \n"%profileName
+    print "targetName: %s \n"%targetName
+    print "rxNames:"
+    for name in rxNames:
+        print name+"\n"
+    print "minusNames:"
+    for name in bgNames:
+        print name+"\n"
+    print "denatNames:"
+    for name in dcNames:
+        print name+"\n"
     
 
     csvFileList = os.listdir(csvDir)
