@@ -888,7 +888,7 @@ try:
         
     # create reactivity profile
     diff = [rxRates[i]-bgRates[i] for i in range(len(rxRates))]     
-    bgdiff = [dcRates[i]-bgRates[i] for i in range(len(dcRates))]
+    bgdiff = [dcRates[i]-bgRates[0] for i in range(len(dcRates))]
     profile = safeDivide(diff,bgdiff)
     #profile = safeDivide(diff,dcRates)
      
